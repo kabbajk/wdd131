@@ -1,0 +1,35 @@
+/* Large View Styles */
+.hamburger {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.temple-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
