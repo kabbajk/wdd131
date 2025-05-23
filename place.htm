@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Leone</title>
+    <meta name="description" content="Discover the beauty of Sierra Leone - its nature, culture, and attractions">
+    <meta name="author" content="James kabba conteh">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sierra Leone</h1>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/sunnyhang.webp">
+            <source media="(min-width: 768px)" srcset="images/airballon.webp">
+            <img src="images/hero-large.webp" alt="Scenic view of Sierra Leone rainforest and beach" width="800" height="400">
+        </picture>
+    </header>
+    
+    <main>
+        <section class="card info">
+            <h2>Country Information</h2>
+            <p>Sierra Leone is a presidential republic located on the Atlantic Ocean in West Africa. It shares borders with Guinea to the north and east, and Liberia to the south. The country has mangrove swamps along the coast, wooded hills, and a plateau in the interior, with the eastern region being mountainous.</p>
+            <p><strong>Capital:</strong> Freetown</p>
+            <p><strong>Population:</strong> 9.12 million</p>
+            <p><strong>Language:</strong> English</p>
+        </section>
+        
+        <section class="card weather">
+            <h2>Weather</h2>
+            <div class="weather-content">
+                <img src="images/1075473_cloud_sky_summer_sun_sunshine_icon.svg" alt="Weather icon" class="mobile-icon">
+                <p><strong>Current Temp:</strong> <span id="temp">27</span>°C</p>
+                <p><strong>Wind Speed:</strong> <span id="wind-speed">8</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Sierra Leone</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,3 +1,12 @@
+:root{
+    --primary-color: #005826;
+    /* Costa Rica green */
+    --secondary-color: #FFFFFF;
+    /* White */
+    --accent-color: #002E6D;
+    /* Blue */
+    --text-color: #333333;
+}
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
