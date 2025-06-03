@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .confirmation { background: #f0f8ff; padding: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="confirmation">
+        <h1>Thank You for Your Review!</h1>
+        <p>Your feedback has been submitted successfully.</p>
+        <p id="reviewCounter">Total reviews submitted: Loading...</p>
+    </div>
+
+    <footer>
+        <!-- Common footer content -->
+    </footer>
+
+    <script>
+        // Review counter
+        document.addEventListener('DOMContentLoaded', () => {
+            let reviewCount = localStorage.getItem('reviewCount') || 0;
+            reviewCount++;
+            localStorage.setItem('reviewCount', reviewCount);
+            document.getElementById('reviewCounter').textContent = 
+                `Total reviews submitted: ${reviewCount}`;
+        });
+    </script>
+</body>
+</html>
