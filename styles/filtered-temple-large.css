@@ -1,0 +1,12 @@
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
