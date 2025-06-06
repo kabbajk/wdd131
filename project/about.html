@@ -3,43 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Our Story | LizaGath</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <div class="parallax-bg about-bg"></div>
+    <header class="glass-nav">
+        <div class="logo">
+            <span class="logo-icon">☕</span>
+            <h1>LizaGath</h1>
+        </div>
         <nav>
-            <div class="logo">YourLogo</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">Our Story</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
     <main>
-        <section class="about-section">
-            <h1>About Us</h1>
-            <p>Detailed information about your site or organization</p>
-            
-            <div class="team">
-                <h2>Our Team</h2>
-                <div id="team-members"></div>
+        <section class="timeline-section">
+            <h2>Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2020</h3>
+                        <p>Founded in a small garage with a single roaster and a dream to share exceptional coffee.</p>
+                    </div>
+                    <div class="timeline-image" style="background-image: url('images/coffee3.jpg');"></div>
+                </div>
+                <div class="timeline-item reverse">
+                    <div class="timeline-image" style="background-image: url('images/first-shop.jpg');"></div>
+                    <div class="timeline-content">
+                        <h3>2021</h3>
+                        <p>Opened our first storefront in downtown Coffeeville, quickly becoming a local favorite.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2024</h3>
+                        <p>Started direct trade relationships with coffee farmers in Ethiopia and Colombia.</p>
+                    </div>
+                    <div class="timeline-image" style="background-image: url('images/young.jpg');"></div>
+                </div>
+                <div class="timeline-item reverse">
+                    <div class="timeline-image" style="background-image: url('images/bgimg.jpg');"></div>
+                    <div class="timeline-content">
+                        <h3>Present</h3>
+                        <p>Now serving the community with three locations and a commitment to sustainability and quality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/');">
+                        <div class="member-details">
+                            <h4>Amanda Maringe</h4>
+                            <p>Head Roaster</p>
+                            <p>8 years with LizaGath</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/barista2.jpg');">
+                        <div class="member-details">
+                            <h4>Gerald Williams</h4>
+                            <p>Master Barista</p>
+                            <p>6 years with LizaGath</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('images/');">
+                        <div class="member-details">
+                            <h4>Hannah Sayoh</h4>
+                            <p>Coffee Sourcer</p>
+                            <p>4 years with LizaGath</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <h2>Our Values</h2>
+            <div class="values-cards">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>We partner with farms that practice ethical, environmentally-friendly cultivation.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>We're committed to being a gathering place that fosters connection.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Quality</h3>
+                    <p>Every cup is crafted with care from bean to brew.</p>
+                </div>
             </div>
         </section>
     </main>
 
+    
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-        <a href="references.html">References</a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon-Fri: 6am-9pm</p>
+                <p>Sat-Sun: 7am-10pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>123 Beach Road Aberdeen</p>
+                <p>FreeTown Sierra Leone</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/shinetelli"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 James Kabba Conteh. All rights reserved.</p>
+        </div>
     </footer>
-
-    <script src="scripts/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

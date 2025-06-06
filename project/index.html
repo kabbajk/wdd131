@@ -1,61 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your website description">
-    <title>ELIZGATH COFFEE</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/logo.jpg" type="image/logo">
+    <title>LizaGath Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
-    <header>
+    <div class="parallax-bg"></div>
+    <header class="glass-nav">
+        <div class="logo">
+            <span class="logo-icon">☕</span>
+            <h1>LizaGath</h1>
+        </div>
         <nav>
-            <div class="logo"></div>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <img src="images/" alt="">
-            <h1>LizaGath Coffee</h1>
-            <p>Welcome to ElizGath Coffee Shop</p>
-            <button id="cta-button">Learn More</button>
+            <div class="hero-content">
+                <h2>Where Every Sip Tells a Story</h2>
+                <p>LizaGath coffee crafted with passion in the heart of the city</p>
+                <button class="cta-button pulse">Explore Our Blends</button>
+            </div>
+            <div class="coffee-steam-animation">
+                <div class="cup">
+                    <div class="steam"></div>
+                    <div class="steam"></div>
+                    <div class="steam"></div>
+                </div>
+            </div>
         </section>
 
-        <section class="features">
-            <div class="feature-card">
-                <img src="images/blackm.jpg" alt="Feature 1" loading="lazy">
-                <h3>Feature One</h3>
-                <p>Description of feature one</p>
-            </div>
-            <div class="feature-card">
-                <img src="images/people.jpg" alt="Feature 2" loading="lazy">
-                <h3>Feature Two</h3>
-                <p>Description of feature two</p>
-            </div>
-            <div class="feature-card">
-                <img src="images/young.jpg" alt="Feature 3" loading="lazy">
-                <h3>Feature Three</h3>
-                <p>Description of feature three</p>
+        <section class="featured-blends">
+            <h3>Today's Featured Blends</h3>
+            <div class="blend-cards">
+                <div class="blend-card" data-blend="ethiopian">
+                    <div class="blend-image"></div>
+                    <h4>Ethiopian Yirgacheffe</h4>
+                    <p>Floral notes with bright citrus acidity</p>
+                    <span class="price">$4.50</span>
+                </div>
+                <div class="blend-card" data-blend="colombian">
+                    <div class="blend-image"></div>
+                    <h4>Colombian Supremo</h4>
+                    <p>Caramel sweetness with nutty undertones</p>
+                    <span class="price">$4.25</span>
+                </div>
+                <div class="blend-card" data-blend="sumatra">
+                    <div class="blend-image"></div>
+                    <h4>Sumatra Mandheling</h4>
+                    <p>Earthy depth with chocolate richness</p>
+                    <span class="price">$4.75</span>
+                </div>
             </div>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy;2023 | James Kabba Conteh | All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon-Fri: 6am-9pm</p>
+                <p>Sat-Sun: 7am-10pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>123 Beach Road Aberdeen</p>
+                <p>FreeTown Sierra Leone</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/shinetelli"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 James Kabba Conteh. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

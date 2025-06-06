@@ -1,148 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="siteplan.css">
-    <title>Website Plan - ELIZGATH COFFEE</title>
+    <title>LizaGath - Website Plan</title>
     <style>
-        /* Color Schema */
+        :root {
+            --primary: #6F4E37;  /* Coffee brown */
+            --secondary: #C4A484; /* Latte */
+            --accent: #A67C52;   /* Darker coffee */
+            --light: #F5F5DC;    /* Cream */
+            --dark: #3E2723;     /* Dark brown */
+        }
         body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #f9f5f0;
-            color: #3a2c1a;
+            font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
-            margin: 0;
+            color: var(--dark);
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
-        
         header {
-            background-color: #dae0a2;;
-            color: #f9f5f0;
+            background: var(--primary);
+            color: white;
             padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
             text-align: center;
-            border-radius: 5px;
-            margin-bottom: 20px;
         }
-        
         h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            color: #3a2c1a;
+            color: var(--primary);
         }
-        
         section {
-            background-color: white;
+            margin-bottom: 40px;
             padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: var(--light);
+            border-radius: 8px;
         }
-        
         .color-swatch {
             display: inline-block;
             width: 100px;
             height: 100px;
             margin: 10px;
+            border-radius: 8px;
             text-align: center;
             line-height: 100px;
             color: white;
             font-weight: bold;
-            border-radius: 5px;
         }
-        
-        /* Typography examples */
-        .font-example {
-            font-size: 18px;
-            margin: 10px 0;
-            padding: 10px;
-            border-left: 3px solid #c7a17a;
-        }
-        
-        /* Wireframe placeholder */
         .wireframe {
-            background-color: #eee;
-            border: 1px dashed #999;
+            background: white;
+            border: 1px solid #ddd;
             padding: 15px;
-            text-align: center;
-            margin: 10px 0;
-            min-height: 200px;
+            margin: 15px 0;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Website Plan</h1>
-        <h2>ELIZGATH COFFEE</h2>
+        <h1>LizaGath Coffee Shop</h1>
+        <p>Website Planning Document</p>
     </header>
-    
+
+    <!-- Site Name Section -->
     <section id="site-name">
         <h2>Site Name</h2>
-        <p><strong>ELIZGATH COFFEE</strong></p>
-        <p>This name represents a premium coffee brand that combines traditional brewing methods with modern flavors. "Elizgath" is derived from "Elizabeth" (representing tradition) and "Gath" (representing strength and foundation).</p>
-        <p>Optional domain availability: elizgathcoffee.com (available)</p>
+        <h3>LizaGath Coffee Shop</h3>
+        <p><strong>Domain Availability:</strong> lizagathcoffee.com</p>
+        <p><strong>Rationale:</strong> The name "LizaGath" combines the coffee brewing process with the idea of a welcoming space. It's memorable, easy to spell, and clearly communicates our coffee shop focus.</p>
     </section>
-    
-    <section id="site-purpose">
+
+    <!-- Site Purpose Section -->
+    <section id="purpose">
         <h2>Site Purpose</h2>
-        <p>The site will provide:</p>
+        <p>The LizaGath website will serve as the digital hub for our artisan coffee shop, providing:</p>
         <ul>
-            <li>Showcase our premium coffee blends and single-origin offerings</li>
-            <li>Online ordering system for coffee beans and merchandise</li>
-            <li>Information about our coffee brewing techniques and recipes</li>
-            <li>Location and hours for our physical coffee shops</li>
-            <li>Subscription service for regular coffee deliveries</li>
+            <li>Information about our specialty coffee blends and brewing methods</li>
+            <li>Details about upcoming events and workshops</li>
+            <li>Our story and commitment to sustainable coffee sourcing</li>
+            <li>Contact information and location details</li>
+            <li>Online contact form for customer inquiries</li>
         </ul>
+        <p>The site will establish our brand identity and serve as a marketing tool to attract new customers while keeping regulars informed.</p>
     </section>
-    
+
+    <!-- Scenarios Section -->
     <section id="scenarios">
         <h2>Scenarios</h2>
-        <p>Target audience questions:</p>
+        <p>Our target audience includes coffee enthusiasts, local professionals, and students. Key scenarios include:</p>
         <ol>
-            <li>What coffee blend would you recommend for someone who prefers a smooth, low-acidity taste?</li>
-            <li>Do you offer any seasonal or limited edition coffee flavors?</li>
-            <li>How can I set up a recurring delivery of my favorite coffee blend?</li>
-            <li>What are the differences between your light, medium, and dark roast options?</li>
+            <li><strong>"What coffee blends do you currently feature, and what are their flavor profiles?"</strong> - Answered by our featured blends section with interactive flavor map.</li>
+            <li><strong>"When is your next latte art workshop, and how can I sign up?"</strong> - Answered by our events calendar with RSVP functionality.</li>
+            <li><strong>"What are your hours and location?"</strong> - Clearly displayed in the footer and contact page.</li>
+            <li><strong>"What makes your coffee shop unique?"</strong> - Answered in our "Our Story" section highlighting our sustainable sourcing and artisan approach.</li>
         </ol>
     </section>
-    
-    <section id="color-schema">
+
+    <!-- Color Schema Section -->
+    <section id="colors">
         <h2>Color Schema</h2>
         <div>
-            <div class="color-swatch" style="background-color: #3498db;;">Primary<br>#6f4e37</div>
-            <div class="color-swatch" style="background-color: #2ecc71;">secondary<br>#c7a17a</div>
-            <div class="color-swatch" style="background-color: #f9f5f0; color: #333;">Background<br>#f9f5f0</div>
-            <div class="color-swatch" style="background-color: #3a2c1a; color: white;">Text<br>#3a2c1a</div>
+            <div class="color-swatch" style="background-color: var(--primary);">#6F4E37<br>Primary</div>
+            <div class="color-swatch" style="background-color: var(--secondary); color: var(--dark);">#C4A484<br>Secondary</div>
+            <div class="color-swatch" style="background-color: var(--accent);">#A67C52<br>Accent</div>
+            <div class="color-swatch" style="background-color: var(--light); color: var(--dark);">#F5F5DC<br>Light</div>
+            <div class="color-swatch" style="background-color: var(--dark);">#3E2723<br>Dark</div>
         </div>
-        <p>Usage:</p>
+        <p><strong>Usage:</strong></p>
         <ul>
-            <li><strong>Primary (#6f4e37):</strong> Headers, navigation, footer (coffee brown)</li>
-            <li><strong>Accent (#c7a17a):</strong> Buttons, highlights, accents (latte color)</li>
-            <li><strong>Background (#f9f5f0):</strong> Page background (cream color)</li>
-            <li><strong>Text (#3a2c1a):</strong> Main text color (dark brown)</li>
+            <li><strong>Primary (#6F4E37):</strong> Navigation, headings, buttons</li>
+            <li><strong>Secondary (#C4A484):</strong> Background accents, card borders</li>
+            <li><strong>Accent (#A67C52):</strong> Hover states, interactive elements</li>
+            <li><strong>Light (#F5F5DC):</strong> Main background color</li>
+            <li><strong>Dark (#3E2723):</strong> Footer, text on light backgrounds</li>
         </ul>
     </section>
-    
+
+    <!-- Typography Section -->
     <section id="typography">
         <h2>Typography</h2>
-        <p>Fonts to be used:</p>
-        <div class="font-example" style="font-family: 'Playfair Display', serif;">
-            <strong>Playfair Display</strong> - Used for headings and branding elements
-        </div>
-        <div class="font-example" style="font-family: 'Open Sans', sans-serif;">
-            <strong>Open Sans</strong> - Used for body text and navigation
-        </div>
+        <p><strong>Primary Font:</strong> Montserrat (sans-serif)</p>
+        <p style="font-family: 'Montserrat', sans-serif;">This is sample text in Montserrat. Used for body text and most content.</p>
+        
+        <p><strong>Heading Font:</strong> Playfair Display (serif)</p>
+        <p style="font-family: 'Playfair Display', serif; font-weight: 700;">This is sample heading text in Playfair Display. Used for all headings.</p>
+        
+        <p><strong>Usage:</strong></p>
+        <ul>
+            <li>Playfair Display for all headings (h1-h6)</li>
+            <li>Montserrat for body text, navigation, buttons</li>
+            <li>Font weights: Regular (400) for body, Bold (700) for emphasis</li>
+        </ul>
     </section>
-    
+
+    <!-- Wireframe Section -->
     <section id="wireframe">
         <h2>Wireframe</h2>
-        
-        <h3>Desktop View</h3>
-        <img src="images/wireframe desktop view.jpg" alt="wireframe">
-            
-
-        
-        <h3>Mobile View</h3>
-       <img src="images/wireframe mobile view.jpg" alt="wireframe">
+        <img src="images/prowireframe.png" alt="wireframe" loading="lazy" width="400" style="max-width: 100%;">
     </section>
 </body>
 </html>

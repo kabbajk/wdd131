@@ -1,67 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contact Us | LizaGath</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <div class="parallax-bg contact-bg"></div>
+    <header class="glass-nav">
+        <div class="logo">
+            <span class="logo-icon">☕</span>
+            <h1>LizaGath</h1>
+        </div>
         <nav>
-            <div class="logo">YourLogo</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
+
     <main>
-        <section class="contact-form">
-            <h1>Contact Us</h1>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+        <section class="contact-hero">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you - questions, feedback, or just to chat coffee!</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>123 Beach Road Aberdeen</p>
+                    <p>Coffeeville, CA 90210</p>
+                    <button class="map-button" id="open-map">View Map</button>
                 </div>
-                
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>23277342953</p>
+                    <p>Mon-Fri: 8am-5pm</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <select id="subject" name="subject">
-                        <option value="general">General Inquiry</option>
-                        <option value="support">Support</option>
-                        <option value="feedback">Feedback</option>
-                    </select>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>hello@lizagath.com</p>
+                    <p>Response within 24 hours</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="events">Events</option>
+                            <option value="wholesale">Wholesale</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter</label>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div id="form-success" class="form-success">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent. We'll get back to you soon.</p>
                 </div>
-                
-                <button type="submit">Submit</button>
-            </form>
-            
-            <div id="form-message"></div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What are your opening hours?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We're open Monday to Friday from 6am to 9pm, and Saturday to Sunday from 7am to 10pm.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer gluten-free options?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We have a selection of gluten-free pastries and snacks. Please ask our staff for recommendations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I reserve space for a group?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! For groups larger than 6 people, please contact us in advance so we can prepare space for you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you sell your coffee beans?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we sell all of our house blends and single-origin coffees by the bag. You can also purchase online for pickup.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
+    <div id="map-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Our Location</h3>
+            <div class="map-container">
+                <!-- Embedded map would go here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126286.40793772673!2d-13.30668560260571!3d8.455519639144358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf04c256b3e60633%3A0x97b7c8c8af013c1e!2sFreetown!5e0!3m2!1sen!2ssl!4v1749059802468!5m2!1sen!2ssl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-placeholder">
+                    <p>Map would be embedded here in a live site</p>
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-        <a href="references.html">References</a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon-Fri: 6am-9pm</p>
+                <p>Sat-Sun: 7am-10pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>123 Beach Road Aberdeen</p>
+                <p>FreeTown Sierra Leone</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 James Kabba Conteh. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
