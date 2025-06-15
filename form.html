@@ -3,82 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share your feedback with our product review form. Rate products, describe your experience, and help us improve. Mobile-friendly form with easy submission process.">
+    <meta name="author" content="James Kabba Conteh">
     <title>Product Review Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    <form id="reviewForm" method="get" action="review.html">
+    <header>
         <h1>Product Review</h1>
-        
-        <!-- Product Name -->
-        <label for="productName">Product Name</label>
-        <select id="productName" name="productName" required>
-            <option value="" disabled selected>Select a Product...</option>
-            <!-- Options will be populated by JavaScript -->
-        </select>
-        
-        <!-- Overall Rating -->
-        <fieldset>
-            <legend>Overall Rating</legend>
-            <div class="rating">
-                <input type="radio" id="star5" name="rating" value="5" required>
-                <label for="star5">★</label>
-                
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">★★</label>
-                
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">★★★</label>
-                
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">★★☆☆</label>
-                
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">★☆☆☆☆</label>
+        <p>We value your feedback! Please share your experience with our products.</p>
+    </header>
+
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <div class="form-group">
+                <label for="productName">Product Name*</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
             </div>
-        </fieldset>
-        
-        <!-- Date of Installation -->
-        <label for="installDate">Date of Installation*</label>
-        <input type="date" id="installDate" name="installDate" required>
-        
-        <!-- Useful Features -->
-        <fieldset>
-            <legend>Useful Features (check all that apply)</legend>
-            <input type="checkbox" id="feature1" name="features" value="ease-of-use">
-            <label for="feature1">Ease of Use</label><br>
-            
-            <input type="checkbox" id="feature2" name="features" value="performance">
-            <label for="feature2">Performance</label><br>
-            
-            <input type="checkbox" id="feature3" name="features" value="design">
-            <label for="feature3">Design</label><br>
-            
-            <input type="checkbox" id="feature4" name="features" value="price">
-            <label for="feature4">Price</label>
-        </fieldset>
-        
-        <!-- Written Review -->
-        <label for="reviewText">Written Review</label>
-        <textarea id="reviewText" name="reviewText" rows="5"></textarea>
-        
-        <!-- User Name -->
-        <label for="userName">Your Name</label>
-        <input type="text" id="userName" name="userName">
-        
-        <!-- Submit Button -->
-        <input type="submit" value="Submit Review">
-    </form>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Overall Rating*</legend>
+                    <div class="rating-container">
+                        <label>
+                            <input type="radio" name="rating" value="1" required>
+                            <span>☆</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="2">
+                            <span>☆☆</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="3">
+                            <span>☆☆☆</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="4">
+                            <span>☆☆☆☆</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="5">
+                            <span>☆☆☆☆☆</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="installDate">Date of Installation*</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Useful Features (check all that apply)</legend>
+                    <label>
+                        <input type="checkbox" name="features" value="ease-of-use">
+                        Ease of Use
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features" value="durability">
+                        Durability
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features" value="performance">
+                        Performance
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features" value="design">
+                        Design
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features" value="price">
+                        Price Value
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="writtenReview">Written Review</label>
+                <textarea id="writtenReview" name="writtenReview" rows="5" placeholder="Share your detailed experience with the product..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" name="userName" placeholder="Optional">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Your Review">
+            </div>
+        </form>
+    </main>
 
     <footer>
-        <p>©2024 <span class="laptop"></span>James Kabba Conteh <span class="laptop"></span><br>
-           Sierra Leone<br>
-           Last Modification: 02/26/2024 13:56:10</p>
+        <p>&copy; <span id="currentYear"></span> Product Reviews. All rights reserved.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 
-    <script src="scripts/form.js"></script>
 </body>
 </html>
